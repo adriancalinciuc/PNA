@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNAClient", "PNAClient\PNAClient.csproj", "{3CCCFEA8-CB13-4D15-AEE5-74269DDC9E27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNAModel", "PNAModel\PNAModel.csproj", "{836A0869-235C-4EA3-AC79-9B1B79C90C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNAViewModel", "PNAViewModel\PNAViewModel.csproj", "{905357F7-52A0-4835-9422-774F04A76A9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNAControls", "PNAControls\PNAControls.csproj", "{3840C49E-0A56-4D1F-B3C0-E86C5273F1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNADal", "PNADal\PNADal.csproj", "{6C220E07-4CFF-449F-A121-7A8A0D0D2BBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNAViews", "PNAViews\PNAViews.csproj", "{BFE941F9-F979-4D4D-9C24-4BB6312C19B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNAShared", "PNAShared\PNAShared.csproj", "{5F5D39ED-6A84-440F-B007-BDB174EDA3FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CCCFEA8-CB13-4D15-AEE5-74269DDC9E27}.Debug|x86.ActiveCfg = Debug|x86
+		{3CCCFEA8-CB13-4D15-AEE5-74269DDC9E27}.Debug|x86.Build.0 = Debug|x86
+		{3CCCFEA8-CB13-4D15-AEE5-74269DDC9E27}.Release|x86.ActiveCfg = Release|x86
+		{3CCCFEA8-CB13-4D15-AEE5-74269DDC9E27}.Release|x86.Build.0 = Release|x86
+		{836A0869-235C-4EA3-AC79-9B1B79C90C0D}.Debug|x86.ActiveCfg = Debug|x86
+		{836A0869-235C-4EA3-AC79-9B1B79C90C0D}.Debug|x86.Build.0 = Debug|x86
+		{836A0869-235C-4EA3-AC79-9B1B79C90C0D}.Release|x86.ActiveCfg = Release|x86
+		{836A0869-235C-4EA3-AC79-9B1B79C90C0D}.Release|x86.Build.0 = Release|x86
+		{905357F7-52A0-4835-9422-774F04A76A9A}.Debug|x86.ActiveCfg = Debug|x86
+		{905357F7-52A0-4835-9422-774F04A76A9A}.Debug|x86.Build.0 = Debug|x86
+		{905357F7-52A0-4835-9422-774F04A76A9A}.Release|x86.ActiveCfg = Release|x86
+		{905357F7-52A0-4835-9422-774F04A76A9A}.Release|x86.Build.0 = Release|x86
+		{3840C49E-0A56-4D1F-B3C0-E86C5273F1B1}.Debug|x86.ActiveCfg = Debug|x86
+		{3840C49E-0A56-4D1F-B3C0-E86C5273F1B1}.Debug|x86.Build.0 = Debug|x86
+		{3840C49E-0A56-4D1F-B3C0-E86C5273F1B1}.Release|x86.ActiveCfg = Release|x86
+		{3840C49E-0A56-4D1F-B3C0-E86C5273F1B1}.Release|x86.Build.0 = Release|x86
+		{6C220E07-4CFF-449F-A121-7A8A0D0D2BBF}.Debug|x86.ActiveCfg = Debug|x86
+		{6C220E07-4CFF-449F-A121-7A8A0D0D2BBF}.Debug|x86.Build.0 = Debug|x86
+		{6C220E07-4CFF-449F-A121-7A8A0D0D2BBF}.Release|x86.ActiveCfg = Release|x86
+		{6C220E07-4CFF-449F-A121-7A8A0D0D2BBF}.Release|x86.Build.0 = Release|x86
+		{BFE941F9-F979-4D4D-9C24-4BB6312C19B0}.Debug|x86.ActiveCfg = Debug|x86
+		{BFE941F9-F979-4D4D-9C24-4BB6312C19B0}.Debug|x86.Build.0 = Debug|x86
+		{BFE941F9-F979-4D4D-9C24-4BB6312C19B0}.Release|x86.ActiveCfg = Release|x86
+		{BFE941F9-F979-4D4D-9C24-4BB6312C19B0}.Release|x86.Build.0 = Release|x86
+		{5F5D39ED-6A84-440F-B007-BDB174EDA3FC}.Debug|x86.ActiveCfg = Debug|x86
+		{5F5D39ED-6A84-440F-B007-BDB174EDA3FC}.Debug|x86.Build.0 = Debug|x86
+		{5F5D39ED-6A84-440F-B007-BDB174EDA3FC}.Release|x86.ActiveCfg = Release|x86
+		{5F5D39ED-6A84-440F-B007-BDB174EDA3FC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
