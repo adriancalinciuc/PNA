@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="PNAViews.Test"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="361.194"
+             d:DesignWidth="588.06">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="5"
+               Grid.ColumnSpan="3"
+               Source="pack://application:,,,/PNAClient;component/TestImages/Adrian_Bondiuc_fin.jpg" />
+        <TextBlock Grid.Column="1"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Left"
+                   FontSize="48"
+                   FontFamily="French Script MT"
+                   Text="Adrian Bondiuc"
+                  />
+        <TextBlock Grid.Column="1"
+                   Grid.Row="3"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Left"
+                   FontSize="48"
+                   FontFamily="French Script MT"
+                   Text="Project Role: Project Manager" />
+        <TextBlock Grid.Column="1"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Left"
+                   FontSize="48"
+                   FontFamily="French Script MT"
+                   Text="Hobbies: Toys and games" />
+
+    </Grid>
+</UserControl>

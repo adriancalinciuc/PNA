@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:k="http://schemas.microsoft.com/kinect/2013">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="KinectPurpleBrush" Color="#FF511C74" />
+        </ResourceDictionary>
+        <ResourceDictionary Source="/PNAViews;component/Styles/ButtonStyles.xaml" />
+        <ResourceDictionary Source="/PNAViews;component/Styles/ControlStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
