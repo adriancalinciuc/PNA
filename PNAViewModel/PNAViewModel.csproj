@@ -53,10 +53,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CustomerViewModel.cs" />
+    <Compile Include="EmployeesViewModel.cs" />
     <Compile Include="EmployeeViewModel.cs" />
     <Compile Include="LoginViewModel.cs" />
     <Compile Include="ProcessesViewModel.cs" />
     <Compile Include="ProjectsViewModel.cs" />
+    <Compile Include="ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

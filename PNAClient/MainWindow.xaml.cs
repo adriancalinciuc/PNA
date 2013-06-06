@@ -1,27 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿///////////////////////////////////////////////////////
+//Author: Adrian Calinciuc (adrian.calinciuc@gmail.com)
+////////////////////////////////////////////////////////
 
 namespace PNAClient
 {
+    using System.Windows;
+    using Microsoft.Kinect;
+    using Microsoft.Kinect.Toolkit;
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public static readonly DependencyProperty KinectSensorProperty =
+            DependencyProperty.Register("KinectSensor", typeof (KinectSensorChooser), typeof (MainWindow),
+                                        new PropertyMetadata(default(KinectSensor)));
+
+        public KinectSensorChooser KinectSensor
+        {
+            get { return (KinectSensorChooser) GetValue(KinectSensorProperty); }
+            set { SetValue(KinectSensorProperty, value); }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            Unloaded += MainWindow_Unloaded;
+            KinectSensor = new KinectSensorChooser();
+            KinectSensor.Start();
         }
+
+        void MainWindow_Unloaded(object sender, RoutedEventArgs e)
+        {
+           if(KinectSensor!=null)
+               KinectSensor.Stop();
+        }
+
+        private void KinectTileButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("pam pam");
+        }
+
+
     }
 }

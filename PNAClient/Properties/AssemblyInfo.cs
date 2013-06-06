@@ -1,4 +1,9 @@
-﻿using System.Reflection;
+﻿///////////////////////////////////////////////////////
+//Author: Adrian Calinciuc (adrian.calinciuc@gmail.com)
+////////////////////////////////////////////////////////
+
+//Author: Adrian Calinciuc (adrian.calinciuc@gmail.com)
+using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;

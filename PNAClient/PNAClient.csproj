@@ -35,7 +35,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ThePNAMonkey.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Kinect, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -86,11 +90,55 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="PNAClient.licenseheader" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ThePNAMonkey.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Kinect.Toolkit.Controls\Microsoft.Kinect.Toolkit.Controls.csproj">
+      <Project>{4508c4d1-85bb-4f3f-9e3b-cc93d231c65d}</Project>
+      <Name>Microsoft.Kinect.Toolkit.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Kinect.Toolkit.FaceTracking\Microsoft.Kinect.Toolkit.FaceTracking.csproj">
+      <Project>{1bcf9cee-df01-430e-b49d-41a9a88963eb}</Project>
+      <Name>Microsoft.Kinect.Toolkit.FaceTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Kinect.Toolkit.Fusion\Microsoft.Kinect.Toolkit.Fusion.csproj">
+      <Project>{58851747-f078-44e1-94b0-99ef065b3319}</Project>
+      <Name>Microsoft.Kinect.Toolkit.Fusion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Kinect.Toolkit\Microsoft.Kinect.Toolkit.csproj">
+      <Project>{c6f9c31b-6130-4443-a5cc-ef0664552ecd}</Project>
+      <Name>Microsoft.Kinect.Toolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PNAViews\PNAViews.csproj">
+      <Project>{bfe941f9-f979-4d4d-9c24-4bb6312c19b0}</Project>
+      <Name>PNAViews</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TestImages\Adam_Sebestyen_fin.jpg" />
+    <Resource Include="TestImages\Adrian_Bondiuc_fin.jpg" />
+    <Resource Include="TestImages\Adrian_Breazu_fin.jpg" />
+    <Resource Include="TestImages\Adrian_Cighi_fin.jpg" />
+    <Resource Include="TestImages\Adrian_Staicu_fin.jpg" />
+    <Resource Include="TestImages\Anca_Cuc_fin.jpg" />
+    <Resource Include="TestImages\Catalina_Barbat_fin.jpg" />
+    <Resource Include="TestImages\Cristina_Prodan_fin.jpg" />
+    <Resource Include="TestImages\Daniel_Lar_fin.jpg" />
+    <Resource Include="TestImages\Daniel_Taut_fin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TestImages\ramon-230x230.jpg" />
+    <Resource Include="TestImages\yonder-academy-pg-230x230.jpg" />
+    <Resource Include="TestImages\yonder-academy-pg-300x200.jpg" />
+    <Resource Include="TestImages\yonder-is-pg-300x199.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

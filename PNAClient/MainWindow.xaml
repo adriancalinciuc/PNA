@@ -1,8 +1,99 @@
-﻿<Window x:Class="PNAClient.MainWindow"
+﻿<!--
+///////////////////////////////////////////////////////
+//Author: Adrian Calinciuc (adrian.calinciuc@gmail.com)
+////////////////////////////////////////////////////////
+-->
+<Window x:Class="PNAClient.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        xmlns:kinect="http://schemas.microsoft.com/kinect/2013"
+        xmlns:kinectKit="clr-namespace:Microsoft.Kinect.Toolkit;assembly=Microsoft.Kinect.Toolkit"
+        xmlns:PNAViews="clr-namespace:PNAViews;assembly=PNAViews"
+        Icon="ThePNAMonkey.ico"
+        Title="MainWindow"
+        MinWidth="930"
+        MinHeight="720"
+        WindowState="Maximized"
+        WindowStyle="ThreeDBorderWindow"
+        Cursor="None"
+        FontFamily="Segoe UI"
+        x:Name="_mainWindow"
         
+        >
+    <Window.Resources>
+
+        <Color x:Key="PostEngagementBackgroundUserColor"
+               A="#80"
+               R="#BC"
+               G="#BE"
+               B="#C0" />
+        <Color x:Key="PreEngagementBackgroundUserColor"
+               A="#80"
+               R="#40"
+               G="#43"
+               B="#46" />
+        <SolidColorBrush x:Key="PostEngagementBackgroundUserBrush"
+                         Color="{StaticResource PostEngagementBackgroundUserColor}" />
+        <DataTemplate x:Key="HandoffTextTemplate">
+            <TextBlock Text="{Binding}"
+                       TextWrapping="Wrap"
+                       FontSize="30"
+                       Foreground="White"
+                       Margin="25 10"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
+        </DataTemplate>
+        <Grid x:Key="HandoffButtonContent"
+              x:Shared="False"
+              Background="Transparent"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center"
+                           Foreground="White"
+                           FontSize="36"
+                           Margin="0"
+                           Text="Press Here" />
+                <TextBlock HorizontalAlignment="Center"
+                           Foreground="White"
+                           FontSize="24"
+                           Margin="0 5 0 0"
+                           Text="To take control" />
+            </StackPanel>
+        </Grid>
+    </Window.Resources>
+    <Grid>
+        <kinect:KinectRegion Name="kinectRegion"
+                             KinectSensor="{Binding KinectSensor.Kinect, ElementName='_mainWindow'}"
+                             IsCursorVisible="True"
+                            >
+            <Grid>
+
+                <PNAViews:EmployessView></PNAViews:EmployessView>
+                <!--<kinect:KinectTileButton Background="{StaticResource KinectPurpleBrush}"
+                                         Width="330"
+                                         Height="330"
+                                         HorizontalAlignment="Center"
+                                         VerticalAlignment="Center"
+                                         BorderThickness="0"
+                                         ClickMode="Press"
+                                         Click="KinectTileButton_Click">
+
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Background="Transparent"
+                                   FontSize="40"
+                                   Foreground="White"
+                                   Text="Press Here" />
+                    </Grid>
+                </kinect:KinectTileButton>-->
+
+            </Grid>
+        </kinect:KinectRegion>
+        <kinectKit:KinectSensorChooserUI KinectSensorChooser="{Binding KinectSensor,ElementName='_mainWindow'}"
+                                         HorizontalAlignment="Center"
+                                         IsListening="False"
+                                         Margin="0 0 0 5" />
     </Grid>
 </Window>
