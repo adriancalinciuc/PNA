@@ -3,15 +3,18 @@ using System.Windows;
 using System.Windows.Controls;
 using PNAViewModel;
 
+
 namespace PNAViews
 {
     /// <summary>
     /// Interaction logic for EmployessView.xaml
     /// </summary>
-    public partial class EmployessView : UserControl
+    public partial class EmployessView : BaseView
     {
-        public EmployeesViewModel model;
-     
+        public EmployeesViewModel Model
+        {
+            get { return model as EmployeesViewModel; }
+        }
 
         public EmployessView()
         {
@@ -21,12 +24,13 @@ namespace PNAViews
 
         void EmployessView_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
+            //to be replaced by container initialisation
             model = new EmployeesViewModel();
 
             //to mockup
-            ToMockup(model);
-            model.CurrentEmployee = model.Employees[0];
-            this.DataContext = model;
+            ToMockup(Model);
+          
+           
         }
 
         /// <summary>
@@ -34,6 +38,8 @@ namespace PNAViews
         /// </summary>
         private void OnDisplayFullImage(object sender, RoutedEventArgs e)
         {
+            var employee = ((ContentControl)e.OriginalSource).Content as EmployeeViewModel;
+            Model.CurrentEmployee = employee;
             employeeCard.ActivateCard(e);
         }
 
@@ -97,11 +103,11 @@ namespace PNAViews
             });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
-                Id = "MP",
+                Id = "RZ",
                 CatchPhrase = "in concert",
-                Name = "Marcel",
-                CompanyPosition = "Cluster Manager",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Daniel_Taut_fin.jpg")
+                Name = "Ramon",
+                CompanyPosition = "Rock Star",
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/ramon-230x230.jpg")
             });
         }
     }

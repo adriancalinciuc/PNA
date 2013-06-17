@@ -46,11 +46,9 @@ namespace PNAViews.Cards
         /// </summary>
         public override  void ActivateCard(RoutedEventArgs e)
         {  
-            // Always go to normal state before a transition
-            var employee = ((ContentControl)e.OriginalSource).Content as EmployeeViewModel;
-            if (employee != null)
+            if (Model != null)
             {
-                SelectedImage = new BitmapImage(employee.ImageUri);
+                SelectedImage = new BitmapImage(Model.ImageUri);
             }
             base.ActivateCard(e);
         }

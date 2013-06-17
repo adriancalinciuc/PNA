@@ -2,6 +2,8 @@
 //Author: Adrian Calinciuc (adrian.calinciuc@gmail.com)
 ////////////////////////////////////////////////////////
 
+using PNAViewModel;
+
 namespace PNAClient
 {
     using System.Windows;
@@ -30,6 +32,10 @@ namespace PNAClient
             Unloaded += MainWindow_Unloaded;
             KinectSensor = new KinectSensorChooser();
             KinectSensor.Start();
+
+            //this line should be done by the flowcontroller aka Navigation manager etc. 
+            _EmployeesView.InitialiseModel(typeof(EmployeesViewModel));
+
         }
 
         void MainWindow_Unloaded(object sender, RoutedEventArgs e)

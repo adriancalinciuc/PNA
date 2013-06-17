@@ -38,7 +38,7 @@
                                            HorizontalAlignment="Left"
                                            FontSize="48"
                                            FontFamily="French Script MT"
-                                           Text="{Binding Path=Name}">
+                                           Text="{Binding Path=Name,UpdateSourceTrigger=PropertyChanged}">
 
 
                                 </TextBlock>
@@ -49,7 +49,7 @@
                                            HorizontalAlignment="Left"
                                            FontSize="48"
                                            FontFamily="French Script MT"
-                                           Text="{Binding Path=CompanyPosition, StringFormat='Project Role: {0}'}" />
+                                           Text="{Binding Path=CompanyPosition, StringFormat='Project Role: {0}', UpdateSourceTrigger=PropertyChanged}" />
 
                                 <TextBlock Grid.Column="1"
                                            Grid.Row="4"
@@ -57,7 +57,7 @@
                                            HorizontalAlignment="Left"
                                            FontSize="48"
                                            FontFamily="French Script MT"
-                                           Text="{Binding Path=CatchPhrase, StringFormat='Wants to be or allready is a (an): {0}'}" />
+                                           Text="{Binding Path=CatchPhrase, StringFormat='Wants to be or allready is a (an): {0}',UpdateSourceTrigger=PropertyChanged}" />
 
                             </Grid>
 

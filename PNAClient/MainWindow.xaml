@@ -69,7 +69,7 @@
                             >
             <Grid>
 
-                <PNAViews:EmployessView></PNAViews:EmployessView>
+                <PNAViews:EmployessView x:Name="_EmployeesView"></PNAViews:EmployessView>
                 <!--<kinect:KinectTileButton Background="{StaticResource KinectPurpleBrush}"
                                          Width="330"
                                          Height="330"
