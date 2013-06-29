@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using PNAViewModel;
+using PNAShared;
 
 
 namespace PNAViews
@@ -25,7 +26,7 @@ namespace PNAViews
         void EmployessView_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
             //to be replaced by container initialisation
-            model = new EmployeesViewModel();
+       //     model = new EmployeesViewModel();
 
             //to mockup
             ToMockup(Model);
@@ -38,11 +39,13 @@ namespace PNAViews
         /// </summary>
         private void OnDisplayFullImage(object sender, RoutedEventArgs e)
         {
-            var employee = ((ContentControl)e.OriginalSource).Content as EmployeeViewModel;
-            Model.CurrentEmployee = employee;
-            employeeCard.ActivateCard(e);
+              
+            //var employee = ((ContentControl)e.OriginalSource).Content as EmployeeViewModel;
+            //Model.CurrentEmployee = employee;
+            //employeeCard.ActivateCard(e);
+            
         }
-
+        
         private void ToMockup(EmployeesViewModel employeesViewModel)
         {
             employeesViewModel.Employees.Add(new EmployeeViewModel()

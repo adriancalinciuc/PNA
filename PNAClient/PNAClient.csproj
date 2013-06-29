@@ -117,6 +117,10 @@
       <Project>{c6f9c31b-6130-4443-a5cc-ef0664552ecd}</Project>
       <Name>Microsoft.Kinect.Toolkit</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PNAShared\PNAShared.csproj">
+      <Project>{5f5d39ed-6a84-440f-b007-bdb174eda3fc}</Project>
+      <Name>PNAShared</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PNAViewModel\PNAViewModel.csproj">
       <Project>{905357F7-52A0-4835-9422-774F04A76A9A}</Project>
       <Name>PNAViewModel</Name>

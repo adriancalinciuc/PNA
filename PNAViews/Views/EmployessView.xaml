@@ -7,7 +7,7 @@
              xmlns:Card="clr-namespace:PNAViews.Cards"
              xmlns:Local="clr-namespace:PNAViews"
              mc:Ignorable="d">
-   <Grid>
+    <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
@@ -33,10 +33,12 @@
                                        HorizontalAlignment="Center"
                                        HorizontalContentAlignment="Stretch"
                                        Margin="0, 0, 0, 30"
+                                       
                                        ItemClick="OnDisplayFullImage">
                 <kinect:KinectItemsControl.Template>
                     <!-- Re-template the KinectItemsControl to not have a KinectScrollViewer but keep everything else it has -->
                     <ControlTemplate TargetType="{x:Type ItemsControl}">
+
                         <Border BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Background="{TemplateBinding Background}"
@@ -46,15 +48,20 @@
                                             VerticalAlignment="Stretch"
                                             SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
                         </Border>
+
                     </ControlTemplate>
                 </kinect:KinectItemsControl.Template>
                 <kinect:KinectItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Image>
-                            <Image.Source>
-                                <BitmapImage UriSource="{Binding Path=ImageUri}" />
-                            </Image.Source>
-                        </Image>
+                        <Button Command="{Binding ShowDetail}" CommandParameter="{Binding RelativeSource={RelativeSource Self}}" >
+
+                            <Image >
+                                <Image.Source>
+                                    <BitmapImage UriSource="{Binding Path=ImageUri}" />
+                                </Image.Source>
+                            </Image>
+                        </Button>
+
                     </DataTemplate>
                 </kinect:KinectItemsControl.ItemTemplate>
                 <kinect:KinectItemsControl.ItemsPanel>

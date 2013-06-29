@@ -2,13 +2,15 @@
 //Author: Adrian Calinciuc (adrian.calinciuc@gmail.com)
 ////////////////////////////////////////////////////////
 
+using PNAShared;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
 
+
 namespace PNAViewModel
 {
-    public abstract class ViewModelBase : INotifyPropertyChanged
+    public abstract class ViewModelBase : AppRoutedCommands, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
