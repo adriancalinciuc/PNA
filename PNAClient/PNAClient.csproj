@@ -131,22 +131,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TestImages\Adam_Sebestyen_fin.jpg" />
-    <Resource Include="TestImages\Adrian_Bondiuc_fin.jpg" />
-    <Resource Include="TestImages\Adrian_Breazu_fin.jpg" />
-    <Resource Include="TestImages\Adrian_Cighi_fin.jpg" />
-    <Resource Include="TestImages\Adrian_Staicu_fin.jpg" />
-    <Resource Include="TestImages\Anca_Cuc_fin.jpg" />
-    <Resource Include="TestImages\Catalina_Barbat_fin.jpg" />
-    <Resource Include="TestImages\Cristina_Prodan_fin.jpg" />
-    <Resource Include="TestImages\Daniel_Lar_fin.jpg" />
-    <Resource Include="TestImages\Daniel_Taut_fin.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="TestImages\ramon-230x230.jpg" />
-    <Resource Include="TestImages\yonder-academy-pg-230x230.jpg" />
-    <Resource Include="TestImages\yonder-academy-pg-300x200.jpg" />
-    <Resource Include="TestImages\yonder-is-pg-300x199.jpg" />
+    <Folder Include="TestImages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
