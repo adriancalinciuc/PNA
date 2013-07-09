@@ -54,7 +54,7 @@ namespace PNAViews
                         CatchPhrase = "Toys and games",
                         Name = "Adrian",
                         CompanyPosition = "Project Manager",
-                        ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Adrian_Bondiuc_fin.jpg")
+                        ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
                     });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
@@ -62,7 +62,7 @@ namespace PNAViews
                 CatchPhrase = "Electronic geek",
                 Name = "Adrian",
                 CompanyPosition = "Team Lead",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Adrian_Breazu_fin.jpg")
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
             });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
@@ -70,7 +70,7 @@ namespace PNAViews
                 CatchPhrase = "Road tripper",
                 Name = "Adrian",
                 CompanyPosition = "Project Manager",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Adrian_Cighi_fin.jpg")
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
             });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
@@ -78,7 +78,7 @@ namespace PNAViews
                 CatchPhrase = "the one and only",
                 Name = "Adrian",
                 CompanyPosition = "Team Lead",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Adrian_Staicu_fin.jpg")
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
             });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
@@ -86,7 +86,7 @@ namespace PNAViews
                 CatchPhrase = "pingy ponghish",
                 Name = "Catalina",
                 CompanyPosition = "Project Manager",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Catalina_Barbat_fin.jpg")
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
             });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
@@ -94,7 +94,7 @@ namespace PNAViews
                 CatchPhrase = "car expert",
                 Name = "Claudiu",
                 CompanyPosition = "Cluster Manager",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Daniel_Lar_fin.jpg")
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
             });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
@@ -102,7 +102,7 @@ namespace PNAViews
                 CatchPhrase = "dancing princess",
                 Name = "Cristina",
                 CompanyPosition = "Team Lead",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/Cristina_Prodan_fin.jpg")
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
             });
             employeesViewModel.Employees.Add(new EmployeeViewModel()
             {
@@ -110,7 +110,7 @@ namespace PNAViews
                 CatchPhrase = "in concert",
                 Name = "Ramon",
                 CompanyPosition = "Rock Star",
-                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/ramon-230x230.jpg")
+                ImageUri = new Uri("pack://application:,,,/PNAClient;component/TestImages/.jpg")
             });
         }
     }
